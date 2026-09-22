@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #fafafa;
+  --surface: #ffffff;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --ink: #18181b;
+  --ink-soft: #71717a;
+  --ink-faint: #a1a1aa;
+  --accent: #5b5bd6;
+  --accent-hover: #4747b8;
+  --accent-soft: #eeeefb;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+}
+
+body {
+  background-color: var(--canvas);
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(24, 24, 27, 0.06) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
